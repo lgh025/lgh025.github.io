@@ -1,6 +1,6 @@
-<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="720" height="720" rx="56" fill="#EAF2FF"/>
-  <circle cx="360" cy="360" r="236" fill="#1565D8"/>
-  <circle cx="360" cy="360" r="206" fill="#101828"/>
-  <text x="360" y="405" text-anchor="middle" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="178" font-weight="700" letter-spacing="-12">GL</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Guanghui Liu initials">
+  <rect width="600" height="600" rx="48" fill="#eef4fb"/>
+  <circle cx="300" cy="300" r="190" fill="#14213d"/>
+  <text x="300" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="165" font-weight="700" fill="#ffffff">GL</text>
+  <circle cx="460" cy="140" r="46" fill="#1565d8" opacity="0.95"/>
 </svg>
