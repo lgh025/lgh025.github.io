@@ -30,7 +30,7 @@ These video/poster files were not present in the uploaded ZIP used for this edit
 ## Additional homepage changes
 
 - Added `Workflow Demos` and `Case Studies` to the main navigation.
-- Changed the primary hero CTA to `View portfolio evidence`.
+- Changed the primary hero CTA to `View demos & reports`.
 - Added FASTQ, bulk RNA-seq, scRNA-seq, pseudobulk, and sample-aware inference language to the public technical positioning.
 - Strengthened the Bioinformatics toolkit description to reflect implemented bulk and single-cell workflows.
 - Removed the initials/avatar graphic from the profile card so the portfolio remains content-first.
@@ -46,3 +46,11 @@ git push origin main
 ```
 
 GitHub Pages should redeploy automatically from `main` / root.
+
+## Direct portfolio report links
+
+- [BRCA portfolio-clean scientific report](assets/reports/BRCA_integrated_report_portfolio_clean.pdf)
+- [scRNA portfolio-clean scientific report](assets/reports/scRNA_scientific_report_portfolio_clean.pdf)
+
+On the homepage, the **Bulk RNA-seq** and **Single-cell RNA-seq** demo cards show **View PDF** and **Download PDF** immediately below each video. The same report links are also retained in **Case Studies**. Text contrast across Case Studies and the rest of the site has been strengthened for easier reading.
+
