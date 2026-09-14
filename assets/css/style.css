@@ -317,3 +317,145 @@ body { color: #0b1f3a; }
 @media (max-width: 650px) {
   .demo-report-strip { grid-template-columns: 1fr; }
 }
+
+
+/* ===== v4 homepage evidence placement + high-contrast readability ===== */
+:root {
+  --ink: #071a33;
+  --muted: #1d2f47;
+  --line: #b7c5d6;
+  --tint: #e8eff7;
+  --accent: #084fa8;
+  --accent-strong: #063b7b;
+}
+
+/* Do not fade content during scroll; portfolio text must remain fully readable. */
+.reveal,
+.reveal.visible {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+body { color: #071a33; }
+.site-nav a { color: #172a43 !important; font-weight: 800; }
+.hero-summary,
+.profile-card p,
+.profile-narrative p,
+.profile-highlights span,
+.research-card p,
+.info-card p,
+.organization,
+.timeline-content ul,
+.skill-group p,
+.publication p,
+.education-item p,
+.service-card p,
+.demo-body p,
+.demo-note,
+.portfolio-card > p,
+.evidence-note,
+.portfolio-review-note {
+  color: #1d2f47 !important;
+}
+.section-lead {
+  color: #17304f !important;
+  font-weight: 600 !important;
+}
+.project-meta { color: #064c9f !important; }
+.tags span { color: #0d3f78 !important; background: #e1ecfa !important; }
+
+/* Reports must be impossible to miss: immediately below each video. */
+.demo-report-strip {
+  display: grid !important;
+  grid-template-columns: auto 1fr 1fr !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 12px 14px !important;
+  margin: 0 !important;
+  background: #e9f2ff !important;
+  border-top: 1px solid #b8cbe2 !important;
+  border-bottom: 1px solid #b8cbe2 !important;
+}
+.demo-report-label {
+  color: #173a67 !important;
+  font-size: .70rem !important;
+  font-weight: 900 !important;
+  letter-spacing: .08em !important;
+  white-space: nowrap;
+}
+.demo-report-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 46px !important;
+  padding: 11px 14px !important;
+  border-radius: 9px !important;
+  font-size: .90rem !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+}
+.demo-report-button.view-report {
+  color: #fff !important;
+  background: #084fa8 !important;
+  border: 2px solid #084fa8 !important;
+}
+.demo-report-button.view-report:hover { background: #063b7b !important; border-color: #063b7b !important; }
+.demo-report-button.download-report-button {
+  color: #063b7b !important;
+  background: #fff !important;
+  border: 2px solid #084fa8 !important;
+}
+.demo-report-button.download-report-button:hover { background: #f5f9ff !important; }
+
+/* Case studies are now part of the homepage workflow-proof block, directly below the demo videos. */
+.inline-case-studies {
+  margin-top: 66px;
+  padding-top: 62px;
+  border-top: 3px solid #b8c7d9;
+  scroll-margin-top: 92px;
+}
+.inline-case-studies .section-heading { margin-bottom: 34px; }
+.inline-case-studies .section-heading h2 { color: #071a33 !important; }
+.inline-case-studies .section-lead { color: #17304f !important; font-weight: 650 !important; }
+.portfolio-card {
+  border-color: #bac7d6 !important;
+  box-shadow: 0 12px 34px rgba(7, 26, 51, .08) !important;
+}
+.portfolio-card h3 { color: #071a33 !important; }
+.portfolio-card > p { color: #1b2e47 !important; font-weight: 500 !important; }
+.portfolio-status { color: #0b3f78 !important; background: #dceafa !important; }
+.portfolio-metrics span { color: #102a48 !important; border-color: #b7c4d5 !important; background: #fff !important; }
+.portfolio-review-note { color: #17304f !important; background: #fff !important; border-left-color: #084fa8 !important; }
+.portfolio-review-note strong { color: #071a33 !important; }
+.report-links { gap: 10px !important; }
+.report-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 44px !important;
+  padding: 10px 14px !important;
+  border-radius: 9px !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+}
+.report-link:not(.download-report) { color: #fff !important; background: #084fa8 !important; border: 2px solid #084fa8 !important; }
+.download-report { color: #063b7b !important; background: #fff !important; border: 2px solid #084fa8 !important; }
+.report-link:hover { text-decoration: none !important; filter: brightness(.94); }
+
+/* Improve all light-section body copy. */
+.section:not(.section-dark):not(.contact-section) p,
+.section:not(.section-dark):not(.contact-section) li,
+.section:not(.section-dark):not(.contact-section) span {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .demo-report-strip { grid-template-columns: 1fr 1fr !important; }
+  .demo-report-label { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .demo-report-strip { grid-template-columns: 1fr !important; }
+  .demo-report-label { grid-column: auto; }
+}
